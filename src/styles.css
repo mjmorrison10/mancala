@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.game-board {
+  height: 400px;
+  background: rgba(85, 25, 35, 0.5);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "player-1-zone zone-1 zone-2 zone-3 zone-4 zone-5 zone-6 player-2-zone"
+    "player-1-zone zone-12 zone-11 zone-10 zone-9 zone-8 zone-7 player-2-zone";
+  /* "player-1-zone zone-7 zone-8 zone-9 zone-10 zone-11 zone-12 player-2-zone"; */
+}
+
+.player-1-zone {
+  grid-area: player-1-zone;
+  background: rgba(150, 25, 25, 0.5);
+  border-radius: 15% 25%;
+  margin: 0.5rem;
+}
+
+.player-2-zone {
+  background: rgba(25, 25, 150, 0.5);
+  border-radius: 25% 15%;
+  margin: 0.5rem;
+  grid-area: player-2-zone;
+}
+
+.play-zone {
+  background: rgba(25, 150, 25, 0.25);
+  border-radius: 50%;
+  margin: 0.25rem;
+}
+
+.zone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zone-1 {
+  grid-area: zone-1;
+}
+
+.zone-2 {
+  grid-area: zone-2;
+}
+
+.zone-3 {
+  grid-area: zone-3;
+}
+
+.zone-4 {
+  grid-area: zone-4;
+}
+
+.zone-5 {
+  grid-area: zone-5;
+}
+
+.zone-6 {
+  grid-area: zone-6;
+}
+
+.zone-7 {
+  grid-area: zone-7;
+}
+
+.zone-8 {
+  grid-area: zone-8;
+}
+
+.zone-9 {
+  grid-area: zone-9;
+}
+
+.zone-10 {
+  grid-area: zone-10;
+}
+
+.zone-11 {
+  grid-area: zone-11;
+}
+
+.zone-12 {
+  grid-area: zone-12;
+}
